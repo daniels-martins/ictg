@@ -44,30 +44,41 @@
         <path d="M14.9242 24.8164L7.70077 20.2234L14.9242 15.6304L22.1465 20.2234L14.9242 24.8164Z" fill="#F7F5F2"></path>
     </svg>
 </div> -->
-    <div class="header bg-white w-100 text-xl">
+    <div class="header bg-white  text-lg">
 
         <div class="flex justify-between">
+
             <div class="left-navbar-container flex">
                 <img src="./assets/img/logo.png" alt="dropbox logo" width="50">
                 <ul class="navbar">
                     <li class="mx-3 fw-bold text-2xl">Dropbox</li>
-                    <li class="mx-3">Why Dropbox?</li>
-                    <li class="mx-3">Products</li>
-                    <li class="mx-3">Solutions</li>
-                    <li class="mx-3">Pricing</li>
+                    <li class="mx-2 tracking-tight text-gray-700">Why Dropbox?</li>
+                    <li class="mx-2 tracking-tight text-gray-700">Products</li>
+                    <li class="mx-2 tracking-tight text-gray-700">Solutions</li>
+                    <li class="mx-2 tracking-tight text-gray-700">Pricing</li>
                 </ul>
             </div>
 
 
 
-            <div class="right-navbar-container">
+            <div class="right-navbar-container mt-0">
                 <ul class="navbar">
 
-                    <li class="mx-3">Contact</li>
-                    <li class="mx-3">Get app</li>
-                    <li class="mx-3">Sign Up</li>
-                    <li class="mx-3">Login</li>
-                    <li class="mx-3"><button class="btn btn-flat btn-primary pr-16">Get Started</button></li>
+                    <li class="mx-2 tracking-tight text-gray-700">Contact</li>
+                    <li class="mx-2 tracking-tight text-gray-700">Get app</li>
+                    <li class="mx-2 tracking-tight text-gray-700">Sign Up</li>
+                    <li class="mx-2 tracking-tight text-gray-700">Login</li>
+                    <li class="mx-2 tracking-tight text-gray-700">
+                        <button class="btn btn-flat btn-primary flex justify-between pr-4">
+                            <div class="btn_text ">
+                                Get Started
+                            </div>
+                            <div class="btn_symbol">
+                                &nbsp;&nbsp;&nbsp; &nrArr;
+                            </div>
+
+                        </button>
+                    </li>
                 </ul>
 
             </div>
@@ -76,8 +87,8 @@
 
     </div>
 
-    <section class="first_section intro_section bg-black text-white p-16">
-        <div class="section_header text-center">
+    <section class="welcome_section intro_section bg-black text-white p-16">
+        <div class="welcome_section_header text-center">
             <span class="text-5xl"> Join over 700 million registered <br> users who trust Dropbox</span>
         </div>
         <div class="section_text text-center my-3 fw-light text-gray-300">
@@ -158,11 +169,233 @@
     </section>
 
 
-    <section class="second_section my-5 py-5" >
-        <div class="second_section_header text-center">
+    <section class="products_section py-5">
+        <div class="products_section_header text-center py-5">
             <p class="h2">A set of products to help you do more</p>
         </div>
+
+        <!-- list of products -->
+        <div class="grid-of-4-cols my-5">
+
+            <div class="container">
+
+                <div class="row m-5 ">
+                    <div class="col">
+                        <img src="./assets/img/dropbox.svg" alt="" width="60">
+                        <p class="paragraph-heading my-3 fw-bold">
+                            Dropbox
+                        </p>
+                        <p class="paragraph-body my-3 text-gray-600">
+                            Securely store, organize, and share all your files.
+                        </p>
+                        <div class="cta">
+                            <a href="#" class="learn-more">
+                                <span class="underline"> Learn More</span>
+                                <span> &nbsp; &nrArr;</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <img src="./assets/img/sign.svg" alt="" width="60">
+                        <p class="paragraph-heading my-3 fw-bold">
+                            Sign
+                        </p>
+                        <p class="paragraph-body my-3 text-gray-600">
+                            Streamline your document workflows with legally-binding eSignatures.
+                        </p>
+                        <div class="cta">
+                            <a href="#" class="learn-more">
+                                <span class="underline"> Learn More</span>
+                                <span> &nbsp; &nrArr;</span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <img src="./assets/img/docsend.svg" alt="" width="60">
+                        <p class="paragraph-heading my-3 fw-bold">
+                            DocSend
+                        </p>
+                        <p class="paragraph-body my-3 text-gray-600">
+                            Securely share your documents with real-time insights, so you know what's most impactful.
+                        </p>
+                        <div class="cta">
+                            <a href="#" class="learn-more">
+                                <span class="underline"> Learn More</span>
+                                <span> &nbsp; &nrArr;</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <img src="./assets/img/backup.svg" alt="" width="60">
+                        <p class="paragraph-heading my-3 fw-bold">
+                            Backup
+                        </p>
+                        <p class="paragraph-body my-3 text-gray-600">
+                            Automatically back up important files on your devices to the cloud and easily restore them.
+                        </p>
+                        <div class="cta">
+                            <a href="#" class="learn-more">
+                                <span class="underline"> Learn More</span>
+                                <span> &nbsp; &nrArr;</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- cont'd list of products -->
+
+        <div class="grid-of-4-cols my-5">
+
+            <div class="container">
+
+                <div class="row m-5">
+                    <div class="col">
+                        <img src="./assets/img/capture.svg" alt="" width="60">
+                        <p class="paragraph-heading my-3 fw-bold">
+                            Capture
+                        </p>
+                        <p class="paragraph-body my-3 text-gray-600">
+                            Get your message across with screenshots, GIFs, or videos recorded right on your screen.
+                        </p>
+                        <div class="cta">
+                            <a href="#" class="learn-more">
+                                <span class="underline"> Learn More</span>
+                                <span> &nbsp; &nrArr;</span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <img src="./assets/img/transfer.svg" alt="" width="60">
+                        <p class="paragraph-heading my-3 fw-bold">
+                            Transfer
+                        </p>
+                        <p class="paragraph-body my-3 text-gray-600">
+                            Quickly and securely deliver large files—up to 100 GB—to anyone.
+                        </p>
+                        <div class="cta">
+                            <a href="#" class="learn-more">
+                                <span class="underline"> Learn More</span>
+                                <span> &nbsp; &nrArr;</span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <img src="./assets/img/paper.svg" alt="" width="60">
+                        <p class="paragraph-heading my-3 fw-bold">
+                            Paper
+                        </p>
+                        <p class="paragraph-body my-3 text-gray-600">
+                            Create collaborative documents to coordinate work and drive projects forward.
+                        </p>
+                        <div class="cta">
+                            <a href="#" class="learn-more">
+                                <span class="underline"> Learn More</span>
+                                <span> &nbsp; &nrArr;</span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <img src="./assets/img/passwords.svg" alt="" width="60">
+                        <p class="paragraph-heading my-3 fw-bold">
+                            Passwords
+                        </p>
+                        <p class="paragraph-body my-3 text-gray-600">
+                            Automatically store unlimited passwords in one central, secure place.
+                        </p>
+                        <div class="cta">
+                            <a href="#" class="learn-more">
+                                <span class="underline"> Learn More</span>
+                                <span> &nbsp; &nrArr;</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
     </section>
+
+    <section class="usage_section bg-black text-white py-5">
+        <div class="usage_section_header text-center py-5">
+            <p class="h2">How will you use Dropbox?</p>
+        </div>
+        <div class="grid-2-cols">
+        <div class="container">
+            <div class="row mx-2">
+                <div class="col">
+                    <img src="./assets/img/segment1.png" alt="notfound" >
+                    <p class="paragraph-heading my-3">
+                        Your files, not ours
+                    </p>
+                    <p class="paragraph-body my-3 text-gray-400">
+                        With Dropbox, your files belong to you, not us, so you can be sure we’re not reselling your
+                        data.
+                    </p>
+                </div>
+        
+                <div class="col">
+                    <img src="./assets/img/segment2.png" alt="">
+                    <p class="paragraph-heading my-3">
+                        All your files in one place
+                    </p>
+                    <p class="paragraph-body my-3 text-gray-400">
+                        Store computer backups, photo libraries, thousands of documents—all your files, in the same
+                        place.
+                    </p>
+                </div>
+        
+        
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <div class="grid-2-cols">
+        <div class="container">
+            <div class="row mx-5">
+                <div class="col">
+                    <img src="./assets/img/emoji smile.svg" alt="" width="40">
+                    <p class="paragraph-heading my-3">
+                        Your files, not ours
+                    </p>
+                    <p class="paragraph-body my-3 text-gray-400">
+                        With Dropbox, your files belong to you, not us, so you can be sure we’re not reselling your
+                        data.
+                    </p>
+                </div>
+
+                <div class="col">
+                    <img src="./assets/img/cloud done.svg" alt="" width="40">
+                    <p class="paragraph-heading my-3">
+                        All your files in one place
+                    </p>
+                    <p class="paragraph-body my-3 text-gray-400">
+                        Store computer backups, photo libraries, thousands of documents—all your files, in the same
+                        place.
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    
+
 </body>
 
 </html>
