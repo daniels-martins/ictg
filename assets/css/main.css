@@ -7,6 +7,27 @@ body {
     border-radius: 0;
 }
 
-.second_section{
+.products_section, .other_usage_container{
     background-color: #F7F5F2;
+}
+
+.usage_container{
+    background-color: #2B2929;
+}
+
+.other_usage_container{
+
+}
+
+.text-white{
+color: white !important;
+}
+
+
+.bg-black{
+    background-color: black !important;
+}
+
+.accordion_image{
+    background-color: #14C8EB;
 }

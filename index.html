@@ -13,21 +13,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
+
+    <!-- tailwind -->
+    <script src="./assets/config/config.js"></script>
+    <script src="./assets/cdn/tailwindcdn.js"></script>
+
     <!-- cdn -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!-- Bootstrap cdn -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"> -->
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+            integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+            crossorigin="anonymous"></script> -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                crossorigin="anonymous"></script> -->
+
+    <!-- Tailwind cdn -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
     <!-- local -->
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="./assets/cdn/boostrap.min.css">
-
-    <!-- tailwind -->
-    <script src="./assets/cdn/tailwindcdn.js"></script>
-    <script src="./assets/config/config.js"></script>
+    <script defer src="./assets/cdn/bootstrap.min.js"> </script>
 
     <!-- custom styles -->
     <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- custom script -->
+    <script defer src="./assets/js/main.js">
+
+    </script>
 </head>
 
 <body>
@@ -49,13 +67,13 @@
         <div class="flex justify-between">
 
             <div class="left-navbar-container flex">
-                <img src="./assets/img/logo.png" alt="dropbox logo" width="50">
+                <img src="./assets/img/logo.png" alt="dropbox logo" width="46">
                 <ul class="navbar">
-                    <li class="mx-3 fw-bold text-2xl">Dropbox</li>
-                    <li class="mx-2 tracking-tight text-gray-700">Why Dropbox?</li>
-                    <li class="mx-2 tracking-tight text-gray-700">Products</li>
-                    <li class="mx-2 tracking-tight text-gray-700">Solutions</li>
-                    <li class="mx-2 tracking-tight text-gray-700">Pricing</li>
+                    <li class="mx-3 fw-bold text-xl">Dropbox</li>
+                    <li class="text-sm mx-3 tracking-tight text-gray-700">Why Dropbox?</li>
+                    <li class="text-sm mx-3 tracking-tight text-gray-700">Products</li>
+                    <li class="text-sm mx-3 tracking-tight text-gray-700">Solutions</li>
+                    <li class="text-sm mx-3 tracking-tight text-gray-700">Pricing</li>
                 </ul>
             </div>
 
@@ -64,11 +82,11 @@
             <div class="right-navbar-container mt-0">
                 <ul class="navbar">
 
-                    <li class="mx-2 tracking-tight text-gray-700">Contact</li>
-                    <li class="mx-2 tracking-tight text-gray-700">Get app</li>
-                    <li class="mx-2 tracking-tight text-gray-700">Sign Up</li>
-                    <li class="mx-2 tracking-tight text-gray-700">Login</li>
-                    <li class="mx-2 tracking-tight text-gray-700">
+                    <li class="text-sm mx-3 tracking-tight text-gray-700">Contact</li>
+                    <li class="text-sm mx-3 tracking-tight text-gray-700">Get app</li>
+                    <li class="text-sm mx-3 tracking-tight text-gray-700">Sign Up</li>
+                    <li class="text-sm mx-3 tracking-tight text-gray-700">Login</li>
+                    <li class="text-sm mx-3 tracking-tight text-gray-700">
                         <button class="btn btn-flat btn-primary flex justify-between pr-4">
                             <div class="btn_text ">
                                 Get Started
@@ -103,8 +121,8 @@
 
         <div class="media-container flex justify-center">
             <!-- <img src="./assets/img/homepage-static-fallback-alt.webp" alt=""> -->
-            <video class="center text-center" src="./assets/img/Dropbox_Homepage.mp4" controls autoplay
-                width="500"></video>
+            <video class="center text-center" src="./assets/img/Dropbox_Homepage.mp4" controls autoplay loop
+                width="650"></video>
         </div>
 
         <div class="section_text text-center my-5 py-3 text-4xl">
@@ -171,7 +189,7 @@
 
     <section class="products_section py-5">
         <div class="products_section_header text-center py-5">
-            <p class="h2">A set of products to help you do more</p>
+            <p class="h2 tracking-widest">A set of products to help you do more</p>
         </div>
 
         <!-- list of products -->
@@ -333,35 +351,360 @@
         <div class="usage_section_header text-center py-5">
             <p class="h2">How will you use Dropbox?</p>
         </div>
-        <div class="grid-2-cols">
-        <div class="container">
+        <div class="grid-2-cols container">
             <div class="row mx-2">
                 <div class="col">
-                    <img src="./assets/img/segment1.png" alt="notfound" >
-                    <p class="paragraph-heading my-3">
-                        Your files, not ours
-                    </p>
-                    <p class="paragraph-body my-3 text-gray-400">
-                        With Dropbox, your files belong to you, not us, so you can be sure we’re not reselling your
-                        data.
-                    </p>
+                    <img src="./assets/img/segment1.png" alt="notfound">
+
+                    <div class="usage_container px-5 pt-5">
+                        <p class="paragraph-heading text-2xl fw-light">
+                            For Work
+                        </p>
+                        <p class="paragraph-body my-3 text-gray-200">
+                            Work efficiently with teammates and clients, stay in sync on projects, and keep company
+                            data safe—all in one place.
+                        </p>
+
+                        <div class="py-5 ">
+                            <button class="btn btn-flat btn-primary flex justify-between px-6 py-3  text-black fw-bold">
+                                <div class="btn_text tracking-widest">
+                                    Get Dropbox for Work
+                                </div>
+                                <div class="btn_symbol">
+                                    &nbsp;&nbsp; &nrArr;
+                                </div>
+
+                            </button>
+                            <br>
+
+                        </div>
+                    </div>
+
                 </div>
-        
+
                 <div class="col">
                     <img src="./assets/img/segment2.png" alt="">
-                    <p class="paragraph-heading my-3">
-                        All your files in one place
-                    </p>
-                    <p class="paragraph-body my-3 text-gray-400">
-                        Store computer backups, photo libraries, thousands of documents—all your files, in the same
-                        place.
-                    </p>
+                    <div class="usage_container px-5 pt-5">
+                        <p class="paragraph-heading text-2xl fw-light">
+                            For personal use
+                        </p>
+                        <p class="paragraph-body my-3 text-gray-200">
+                            Keep everything that’s important to you and your family shareable and safe in one place.
+                            Back up files in the cloud,
+                            share photos and videos, and more.
+                        </p>
+
+                        <div class="py-5">
+                            <button class="btn btn-flat btn-primary flex justify-between px-6 py-3 text-black fw-bold">
+                                <div class="btn_text tracking-widest">
+                                    Get Dropbox for personal use
+                                </div>
+                                <div class="btn_symbol">
+                                    &nbsp;&nbsp; &nrArr;
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
-        
-        
             </div>
         </div>
+
+        <div class="usage_section_header text-center fw-lighter py-5">
+            <p class="text-4xl tracking-wide py-5">Cloud storage you can count on</p>
         </div>
+
+        <div class="grid-of-4-cols">
+
+            <div class="container">
+
+                <div class="row mx-5">
+                    <div class="col">
+                        <img src="./assets/img/56_graphitebg.svg" alt="" width="100" height="100">
+                        <p class="paragraph-heading my-4 fw-bold text-xl tracking-widest">
+                            of Fortune 500 companies
+                        </p>
+                        <p class="paragraph-body text-gray-400">
+                            have at least one Dropbox team plan.
+                        </p>
+                    </div>
+
+                    <div class="col">
+                        <img src="./assets/img/1B+_graphitebg.svg" alt="" width="100" height="100">
+                        <p class="paragraph-heading my-4 fw-bold text-xl tracking-widest">
+                            mobile app downloads
+                        </p>
+                        <p class="paragraph-body text-gray-400">
+                            with Editors’ Choice Awards from the Google Play and Apple App Store.
+                        </p>
+                    </div>
+
+
+                    <div class="col">
+                        <img src="./assets/img/600K_graphitebg.svg" alt="" height="100">
+                        <p class="paragraph-heading mt-4 fw-bold text-xl tracking-widest">
+                            teams globally
+                        </p>
+                        <p class="paragraph-body text-gray-400">
+                            use Dropbox to share work, safeguard content, and grow their business.
+                        </p>
+                    </div>
+
+                    <div class="col">
+                        <img src="./assets/img/4.5B+_graphitebg.svg" alt="" height="100" width="100">
+                        <p class="paragraph-heading my-4 fw-bold text-xl tracking-widest">
+                            connections and counting
+                        </p>
+                        <p class="paragraph-body my-4 text-gray-400">
+                            created through Dropbox file sharing.
+                        </p>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="other_usage_container">
+
+        <div class="usage_section_header text-center py-5">
+            <p class="h1 tracking-widest">What else can Dropbox help you do?</p>
+            <p class="text-md tracking-wide pb-5">Dropbox brings everything—traditional files, cloud content, and web
+                shortcuts—together in one place.</p>
+
+            <!-- accordions (like FAQ) -->
+            <div class="grid-2-cols">
+                <div class="container">
+                    <div class="row" height="200">
+                        <div class="col">
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Get 2 GB of cloud storage for free with Dropbox Basic
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p class="text-left my-3">
+                                                Save and access your files from any device, and share them with anyone.
+                                                Discover what Dropbox can do for you- get a free
+                                                account, no strings attached!
+                                            </p>
+
+                                            <div class="text-left">
+                                                <a href="#" class="">
+                                                    <span class="underline"> Learn More</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Dropbox Plus has room for all your content with space to spare
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="text-left my-3">
+                                                    Safeguard your photos, personal docs, work files, and much more.
+                                                    Save everything with 2,000 GB of space—and get some
+                                                    handy tools to help you stay organized.
+                                                </p>
+
+                                                <div class="text-left">
+                                                    <a href="#" class="">
+                                                        <span class="underline"> Learn More</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingFour">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                Dropbox Family is a place for everyone with space for everything
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="text-left my-3">
+                                                    Share 2,000 GB of storage between 6 people. Each family plan member
+                                                    gets their own private Dropbox account for less than
+                                                    the price of two Plus plans.
+                                                </p>
+
+                                                <div class="text-left">
+                                                    <a href="#" class="">
+                                                        <span class="underline"> Learn More</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingFour">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                aria-expanded="false" aria-controls="collapseFour">
+                                                Make life easier for you and your clients with Dropbox Professional
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="text-left my-3">
+                                                    Get our full suite of premium productivity and sharing tools—plus
+                                                    3,000 GB of space. Dropbox Professional makes it
+                                                    easier for you to work with colleagues and clients.
+                                                </p>
+
+                                                <div class="text-left">
+                                                    <a href="#" class="">
+                                                        <span class="underline"> Learn More</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingFive">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                aria-expanded="false" aria-controls="collapseFive">
+                                                Streamline your document workflow with Dropbox Sign
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse"
+                                            aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="text-left my-3">
+                                                    Save yourself time and hassle with Dropbox Sign. You can sign
+                                                    legally-binding agreements with a few clicks. And it's
+                                                    just as easy to request a signature from someone else.
+                                                </p>
+
+                                                <div class="text-left">
+                                                    <a href="#" class="">
+                                                        <span class="underline"> Learn More</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                                aria-expanded="false" aria-controls="collapseSix">
+                                                Centralize, secure, and easily access your work with Dropbox Standard
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSix" class="accordion-collapse collapse"
+                                            aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="text-left my-3">
+                                                    Safeguard sensitive and confidential info. Automate time-consuming
+                                                    processes with powerful admin and collaboration
+                                                    tools. And easily recover your work if something ever goes wrong.
+                                                    Minimum 3 users per plan.
+
+                                                </p>
+
+                                                <div class="text-left">
+                                                    <a href="#" class="">
+                                                        <span class="underline"> Learn More</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingSeven">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                                aria-expanded="false" aria-controls="collapseSeven">
+                                                Dropbox Family is a place for everyone with space for everything
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSeven" class="accordion-collapse collapse"
+                                            aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="text-left my-3">
+                                                    Share 2,000 GB of storage between 6 people. Each family plan member
+                                                    gets their own private Dropbox account for less than
+                                                    the price of two Plus plans.
+                                                </p>
+
+                                                <div class="text-left">
+                                                    <a href="#" class="">
+                                                        <span class="underline"> Learn More</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingEight">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseEight"
+                                                aria-expanded="false" aria-controls="collapseEight">
+                                                Dropbox Family is a place for everyone with space for everything
+                                            </button>
+                                        </h2>
+                                        <div id="collapseEight" class="accordion-collapse collapse"
+                                            aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <p class="text-left my-3">
+                                                    Share 2,000 GB of storage between 6 people. Each family plan member
+                                                    gets their own private Dropbox
+                                                    account for less than
+                                                    the price of two Plus plans.
+                                                </p>
+
+                                                <div class="text-left">
+                                                    <a href="#" class="">
+                                                        <span class="underline"> Learn More</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col accordion_image pt-32 px-8">
+                            <img src="./assets/img/basic_hero.png" alt="" class="w-full">
+                           
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
 
     </section>
 
@@ -394,7 +737,7 @@
             </div>
         </div>
     </div>
-    
+
 
 </body>
 
