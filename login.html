@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropBox SPA | ICTG - Martins</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- tailwind -->
+    <script src="./assets/config/config.js"></script>
+    <script src="./assets/cdn/tailwindcdn.js"></script>
+
+    <!-- local -->
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assets/cdn/boostrap.min.css">
+    <script defer src="./assets/cdn/bootstrap.min.js"> </script>
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- custom script -->
+    <script defer src="./assets/js/main.js">
+
+    </script>
+</head>
+
+<body>
+    <div class="header bg-white border-bottom text-lg">
+
+        <div class="flex justify-between">
+
+            <div class="left-navbar-container flex">
+                <img src="./assets/img/logo.png" alt="dropbox logo" width="46">
+                <ul class="navbar">
+                    <li class="mx-3 fw-bold text-xl"> <a href="index.html">Dropbox</a></li>
+
+                </ul>
+            </div>
+
+
+            <div class="right-navbar-container mt-0">
+                <ul class="navbar">
+                    <li class="text-sm mx-3 tracking-tight text-gray-700"> <span
+                            class="d-inline-block px-3">&#127758;</span>
+                        <a href="register.html"> Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section class="auth_section border-t border-gray-300 mb-5">
+        <div class="container">
+
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <div class="login-container">
+                        <div class="heading text-xl my-5">Log in or sign up</div>
+                        <form action="http://localhost/ictg-api/api_routes/login.php" method="post" class="my-5">
+                            <input type="hidden" name="dashboard_route" value="http://localhost:5500/dashboard.html">
+
+                            <div class="label-container my-2">
+                                <label for="email"><small class="text-gray-500">Email</small></label>
+                            </div>
+                            <div class="input-group">
+                                <input type="hidden" name="form-name" value="login">
+                                <input type="email" class="form-control input-block" name="email">
+                            </div>
+
+                            <div class="label-container mt-4 mb-2">
+                                <label for="password"><small class="text-gray-500">Password</small></label>
+                            </div>
+
+                            <div class="input-group">
+                                <input type="password" class="form-control input-block" name="password">
+                            </div>
+                            <div class="my-5">
+                                <input type="submit" value="Continue"
+                                    class="w-100 btn-flat bg-blue-600 py-2 active:bg-blue-700 hover:bg-blue-700 text-white">
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="footer_section bg-black py-5">
+        <div class="grid-of-4-cols">
+
+            <div class="container">
+
+                <div class="row mx-5 p-5">
+                    <div class="col">
+                        <p class="h4 text-white ">Dropbox</p>
+
+                        <div class="content my-5 text-gray-400">
+                            <p class="my-2 text-sm hover:underline"> Desktop app</p>
+                            <p class="my-2 text-sm hover:underline"> Mobile app</p>
+                            <p class="my-2 text-sm hover:underline"> Integrations</p>
+                            <p class="my-2 text-sm hover:underline"> Features</p>
+                            <p class="my-2 text-sm hover:underline"> Solutions</p>
+                            <p class="my-2 text-sm hover:underline"> Do more than store</p>
+                            <p class="my-2 text-sm hover:underline"> Security</p>
+                            <p class="my-2 text-sm hover:underline"> Advance access</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+                        <p class="h4 text-white ">Products</p>
+                        <div class="content my-5 text-gray-400">
+
+                            <p class="my-2 text-sm hover:underline"> Plus </p>
+                            <p class="my-2 text-sm hover:underline"> Professional </p>
+                            <p class="my-2 text-sm hover:underline"> Business</p>
+                            <p class="my-2 text-sm hover:underline"> Enterprise</p>
+                            <p class="my-2 text-sm hover:underline"> Dropbox Sign</p>
+                            <p class="my-2 text-sm hover:underline"> DocSend </p>
+                            <p class="my-2 text-sm hover:underline"> Plans</p>
+                            <p class="my-2 text-sm hover:underline"> Product updates </p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col">
+                        <p class="h4 text-white ">Support</p>
+                        <div class="content my-5 text-gray-400">
+
+                            <p class="my-2 text-sm hover:underline"> Help center</p>
+                            <p class="my-2 text-sm hover:underline"> Contact us</p>
+                            <p class="my-2 text-sm hover:underline"> Privacy & terms</p>
+                            <p class="my-2 text-sm hover:underline"> Cookie policy</p>
+                            <p class="my-2 text-sm hover:underline"> Cookies & CCPA preferences</p>
+                            <p class="my-2 text-sm hover:underline"> AI principles</p>
+                            <p class="my-2 text-sm hover:underline"> Sitemap</p>
+                            <p class="my-2 text-sm hover:underline"> Learning resources</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <p class="h4 text-white ">Community</p>
+                        <div class="content my-5 text-gray-400">
+
+                            <p class="my-2 text-sm hover:underline">Blog </p>
+                            <p class="my-2 text-sm hover:underline">Developers </p>
+                            <p class="my-2 text-sm hover:underline">Community forums </p>
+                            <p class="my-2 text-sm hover:underline">Referrals </p>
+                            <p class="my-2 text-sm hover:underline">Reseller partners </p>
+                            <p class="my-2 text-sm hover:underline">Integration partners </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <p class="h4 text-white ">Company</p>
+                        <div class="content my-5 text-gray-400">
+                            <p class="my-2 text-sm hover:underline">About us</p>
+                            <p class="my-2 text-sm hover:underline">Jobs</p>
+                            <p class="my-2 text-sm hover:underline">Investor relations</p>
+                            <p class="my-2 text-sm hover:underline">ESG</p>
+                            <p class="my-2 text-sm hover:underline">Find a partner</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

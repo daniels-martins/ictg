@@ -3,7 +3,7 @@ body {
 }
 
 
-.btn-flat {
+.btn-flat, .input-block {
     border-radius: 0;
 }
 
@@ -30,4 +30,8 @@ color: white !important;
 
 .accordion_image{
     background-color: #14C8EB;
+}
+
+.bg-gray-custom{
+    background-color: #1E1919;
 }
